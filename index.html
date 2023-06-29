@@ -27,11 +27,11 @@
         </label>
         <div class="menu">
             <div class="column">
-                <h3 id="one" class="onee" onclick="one()">CR7</h3>
-                <h3 id="two" onclick="two()">CAREER HIGHLIGHTS</h3>
-                <h3 id="three" onclick="three()">BRANDS</h3>
-                <h3 id="four" onclick="four()">NEWSLETTER</h3>
-                <h3 id="five" onclick="five()">PARTNERS</h3>
+                <h3 id="one1" class="onee" onclick="one()">CR7</h3>
+                <h3 id="two1" onclick="two()">CAREER HIGHLIGHTS</h3>
+                <h3 id="three1" onclick="three()">BRANDS</h3>
+                <h3 id="four1" onclick="four()">NEWSLETTER</h3>
+                <h3 id="five1" onclick="five()">PARTNERS</h3>
             </div>
             <div class="footer">
                 <h2>PRIVACY POLICY</h2>
@@ -231,6 +231,11 @@
         var threen = document.getElementById("three");
         var fourn = document.getElementById("four");
         var fiven = document.getElementById("five");
+        var menu1 = document.getElementById("one1");
+        var menu2 = document.getElementById("two1");
+        var menu3 = document.getElementById("three1");
+        var menu4 = document.getElementById("four1");
+        var menu5 = document.getElementById("five1");
         var texts1 = document.getElementById("text1");
         var texts2 = document.getElementById("text2");
         var texts3 = document.getElementById("text3");
@@ -294,6 +299,49 @@
             videoss.play();
             btn.style.display="none";
             videoss.setAttribute("controls","controls");
+        }
+         function one(){
+            menu1.classList.add("strike");
+            menu2.classList.remove("strike");
+            menu3.classList.remove("strike");
+            menu4.classList.remove("strike"); 
+            menu5.classList.remove("strike");
+        }
+        function two(){
+            menu2.classList.add("strike");
+            menu1.classList.remove("strike");
+            menu3.classList.remove("strike");
+            fourn.classList.remove("strike"); 
+            fiven.classList.remove("strike");
+            menu1.style.opacity="0.45";
+            menu1.classList.remove("onee");
+        }
+        function three(){
+            menu3.classList.add("strike");
+            menu2.classList.remove("strike");
+            menu2.classList.remove("strike");
+            menu4.classList.remove("strike"); 
+            menu5.classList.remove("strike");
+            menu1.style.opacity="0.45";
+            menu1.classList.remove("onee");
+        }
+        function four(){
+            menu4.classList.add("strike");
+            menu1.classList.remove("strike");
+            menu2.classList.remove("strike");
+            menu3.classList.remove("strike"); 
+            menu5.classList.remove("strike");
+            menu1.style.opacity="0.45";
+            menu1.classList.remove("onee");
+        }
+        function five(){
+            menu5.classList.add("strike");
+            menu1.classList.remove("strike");
+            menu2.classList.remove("strike");
+            menu4.classList.remove("strike"); 
+            menu3.classList.remove("strike");
+            menu1.style.opacity="0.45";
+            menu1.classList.remove("onee");
         }
     </script>
 </body>
