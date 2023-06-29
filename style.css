@@ -715,4 +715,25 @@ h3 {
   color:white;
   opacity:.7;
 }
-       
+
+@media screen and (min-width: 800px) {
+  .newsletter {
+    position: relative;
+  }
+  .newsletter::before {
+    content: "";
+    width: 15%;
+    background-color: #000;
+    height: 80vh;
+    position: absolute;
+  }
+  .newsletter::after {
+    content: "";
+    width: 15%;
+    background-color: #000;
+    height: 80vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
