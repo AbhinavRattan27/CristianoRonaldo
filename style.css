@@ -712,6 +712,7 @@ h3 {
 }/*sourceMappingURL=style.css.map */
 .icons a{
   text-decoration:none;
-  color:transparent;
+  color:white;
+  opacity:.7;
 }
        
